@@ -9,27 +9,33 @@
     <!-- Box Icons -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
   </head>
-  <body>
+  <body class="scroll-smooth">
     <!-- Start header -->
     <header class="max-w-full sticky top-0 left-0 bg-white shadow-md shadow-gray-200 z-50">
       <div class="container">
-        <div class="flex items-center justify-between relative px-6 py-5 lg:py-3">
-          <a href="#" class="text-base font-bold text-primary tracking-wider md:text-lg lg:text-xl xl:text-2xl">CourLearn</a>
-          <nav id="nav-menu" class="hidden fixed top-16 right-0 h-full w-2/3 bg-white shadow-lg text-center px-5 pt-10 sm:w-1/2 lg:block lg:static lg:shadow-none lg:px-0 lg:pt-0 lg:w-3/4">
+        <div class="flex items-center justify-between relative px-3 py-5 max-[305px]:px-2 max-[305px]:py-4 lg:py-3">
+          <a href="#" class="text-base font-bold text-primary tracking-wider max-[305px]:text-sm md:text-lg lg:text-xl xl:text-2xl">CourLearn</a>
+          <nav id="nav-menu" class="hidden fixed top-16 right-0 h-full w-2/3 bg-white shadow-lg text-center px-5 pt-10 max-[305px]:top-[3.2rem] sm:w-1/2 lg:block lg:static lg:shadow-none lg:px-0 lg:pt-0 lg:w-3/4">
             <div class="lg:flex lg:justify-between lg:items-center lg:max-w-full lg:w-full">
               <ul class="mb-10 lg:flex lg:mb-0 lg:gap-7 xl:gap-10">
-                <li><a href="" class="inline-block py-4 text-base font-medium text-slate-500 hover:text-slate-600 lg:text-sm xl:text-base">Home</a></li>
-                <li><a href="" class="inline-block py-4 text-base font-medium text-slate-500 hover:text-slate-600 lg:text-sm xl:text-base">Course</a></li>
-                <li><a href="" class="inline-block py-4 text-base font-medium text-slate-500 hover:text-slate-600 lg:text-sm xl:text-base">Mentor</a></li>
-                <li><a href="" class="inline-block py-4 text-base font-medium text-slate-500 hover:text-slate-600 lg:text-sm xl:text-base">Pricing</a></li>
-                <li><a href="" class="inline-block py-4 text-base font-medium text-slate-500 hover:text-slate-600 lg:text-sm xl:text-base">About Us</a></li>
-                <li><a href="" class="inline-block py-4 text-base font-medium text-slate-500 hover:text-slate-600 lg:text-sm xl:text-base">Contact</a></li>
+                <li><a href="#home" class="inline-block py-4 text-base font-medium text-slate-500 hover:text-slate-600 max-[305px]:text-sm lg:text-sm xl:text-base">Home</a></li>
+                <li><a href="#benefit" class="inline-block py-4 text-base font-medium text-slate-500 hover:text-slate-600 max-[305px]:text-sm lg:text-sm xl:text-base">Course</a></li>
+                <li><a href="" class="inline-block py-4 text-base font-medium text-slate-500 hover:text-slate-600 max-[305px]:text-sm lg:text-sm xl:text-base">Mentor</a></li>
+                <li><a href="" class="inline-block py-4 text-base font-medium text-slate-500 hover:text-slate-600 max-[305px]:text-sm lg:text-sm xl:text-base">Pricing</a></li>
+                <li><a href="" class="inline-block py-4 text-base font-medium text-slate-500 hover:text-slate-600 max-[305px]:text-sm lg:text-sm xl:text-base">About Us</a></li>
+                <li><a href="" class="inline-block py-4 text-base font-medium text-slate-500 hover:text-slate-600 max-[305px]:text-sm lg:text-sm xl:text-base">Contact</a></li>
               </ul>
               <div class="flex flex-col gap-6 lg:flex-row lg:gap-3 xl:gap-5">
-                <a href="#" class="inline-block py-2 bg-slate-50 hover:bg-slate-100 rounded-lg text-slate-600 hover:text-slate-700 text-base font-semibold transition duration-300 ease-in-out lg:px-2 lg:text-sm lg:py-1 xl:text-base xl:px-5"
+                <a
+                  href="#"
+                  class="inline-block py-2 bg-slate-50 hover:bg-slate-100 rounded-lg text-slate-600 hover:text-slate-700 text-base font-semibold transition duration-300 ease-in-out max-[305px]:text-sm lg:px-2 lg:text-sm lg:py-1 xl:text-base xl:px-5"
                   >Sign In</a
                 >
-                <a href="#" class="inline-block py-2 bg-primary hover:bg-slate-200 rounded-lg text-white hover:text-primary text-base transition duration-300 ease-in-out lg:px-2 lg:text-sm lg:py-1 xl:text-base xl:px-5">Sign Up</a>
+                <a
+                  href="#"
+                  class="inline-block py-2 bg-primary hover:bg-slate-200 rounded-lg text-white hover:text-primary text-base transition duration-300 ease-in-out max-[305px]:text-sm max-[305px]:py-1 lg:px-2 lg:text-sm lg:py-1 xl:text-base xl:px-5"
+                  >Sign Up</a
+                >
                 <!-- <a href="" class="inline-block text-sm font-medium bg-green-400">Sign In</a> -->
               </div>
             </div>
@@ -45,45 +51,60 @@
     <!-- End header -->
 
     <!-- Start Hero Section -->
-    <section id="home" class="pt-20">
+    <section id="home" class="pt-16 max-[305px]:pt-16 sm:pt-28 md:pt-32 lg:pt-16">
       <div class="container">
-        <div class="px-6 py-5 relative lg:flex lg:items-center lg:gap-16">
+        <div class="px-3 py-5 relative max-[305px]:px-2 max-[305px]:py-2 lg:flex lg:items-center lg:gap-16">
           <div class="flex flex-col gap-6">
-            <h1 class="text-3xl font-black tracking-wide text-primary sm:text-4xl md:text-5xl xl:text-[3.5rem]">Improve your ability in learning and we will guide you step by step</h1>
-            <p class="text-sm font-medium text-slate-500 sm:text-base">
+            <h1 class="text-2xl font-black tracking-wide text-primary max-[305px]:text-2xl sm:text-3xl md:text-4xl xl:text-5xl">Improve your ability in learning and we will guide you step by step</h1>
+            <p class="text-sm font-medium text-slate-500 max-[305px]:text-xs lg:text-base">
               Cour-learn is a digital platform used to learn programming and UI/UX design. We provide various kinds of classes that you can learn from start to finish. We will also guide you to find the right career for you.
             </p>
-            <div class="mt-6 flex flex-wrap items-center gap-4 overflow-hidden">
-              <a href="" class="inline-block px-5 py-2 bg-primary hover:bg-slate-100 text-white hover:text-primary rounded-md text-sm font-medium sm:px-6 sm:text-base">Get Started</a>
-              <a href="" class="inline-block px-5 py-2 bg-white hover:bg-primary text-primary hover:text-white border-2 border-primary text-sm font-medium rounded-md sm:px-6 sm:text-base">Free Trial</a>
+            <div class="mt-6 flex flex-wrap items-center gap-4">
+              <a
+                href=""
+                class="inline-block px-4 py-1.5 bg-primary hover:bg-white text-white ring-1 ring-primary hover:text-primary rounded-md text-sm font-medium transition ease-in-out duration-300 max-[305px]:px-3 max-[305px]:text-xs sm:px-6 sm:text-base lg:px-5 lg:py-2"
+                >Get Started</a
+              >
+              <a
+                href=""
+                class="inline-block px-4 py-1.5 bg-white hover:bg-primary text-primary hover:text-white border-2 border-primary text-sm font-medium rounded-md transition ease-in-out duration-300 max-[305px]:px-3 max-[305px]:text-xs sm:px-6 sm:text-base lg:px-5 lg:py-2"
+                >Free Trial</a
+              >
             </div>
           </div>
-          <div class="flex justify-center mt-11 lg:mt-0 lg:justify-end w-full">
-            <div class="relative w-72 h-96 flex justify-center items-center overflow-hidden sm:w-96 md:w-[30rem] md:h-[30rem] lg:w-[16rem] lg:h-[23rem] xl:w-[26rem] xl:h-[30rem]">
-              <img src="img/home.png" alt="" class="z-10 w-56 absolute bottom-0 sm:w-[16rem] md:w-72 xl:w-[22rem] xl:right-0 xl:-bottom-10" />
-              <img src="img/Course.png" alt="" class="absolute w-48 bottom-0 sm:w-52 md:w-56 xl:w-64 xl:right-10" />
-              <img src="img/Course1.png" alt="" class="w-14 z-40 absolute top-16 left-10 sm:w-16 sm:left-14 md:w-20 md:top-28 md:left-24 lg:left-1 lg:top-4 xl:top-[5rem] xl:left-24 xl:w-[5rem]" />
-              <img src="img/course2.png" alt="" class="hidden lg:block lg:w-40 lg:absolute lg:z-50 lg:bottom-20 lg:right-20 xl:w-48 xl:right-28" />
-              <img src="img/course3.png" alt="" class="hidden lg:block lg:w-40 lg:absolute lg:z-50 lg:bottom-2 lg:right-[6rem] xl:w-48 xl:right-[8rem]" />
+          <div class="flex justify-center mt-14 w-full min-[485px]:mt-20 lg:mt-0 lg:justify-end">
+            <div
+              class="relative w-60 h-[22rem] flex justify-center items-center overflow-hidden max-[305px]:w-56 max-[305px]:h-80 min-[485px]:w-80 sm:w-[26rem] sm:h-96 md:w-[30rem] md:h-[30rem] lg:w-[22rem] lg:h-[26rem] xl:w-[28rem] xl:h-[30rem]">
+              <img src="img/home.png" alt="" class="z-10 w-52 absolute bottom-0 max-[305px]:w-48 min-[485px]:w-60 sm:w-64 md:w-72 lg:right-0 xl:w-[22rem] xl:right-0 xl:-bottom-10" />
+              <img
+                src="img/Course.png"
+                alt=""
+                class="absolute w-44 bottom-0 left-6 max-[305px]:w-40 max-[305px]:left-7 min-[485px]:w-48 min-[485px]:left-14 sm:w-52 sm:left-[6rem] md:w-56 lg:w-[15.3rem] lg:left-[4.7rem] xl:w-64 xl:left-36" />
+              <img
+                src="img/Course1.png"
+                alt=""
+                class="w-10 absolute top-[4.5rem] left-10 max-[305px]:w-10 max-[305px]:left-10 min-[485px]:w-12 min-[485px]:left-14 min-[485px]:top-16 sm:w-16 sm:left-20 md:w-20 md:top-28 md:left-24 lg:w-16 lg:left-16 lg:top-10 xl:top-16 xl:left-24 xl:w-24" />
+              <img src="img/course2.png" alt="" class="hidden sm:block sm:w-44 sm:absolute sm:bottom-20 sm:left-8 sm:z-20 lg:w-48 lg:left-2 xl:w-64 xl:left-14" />
+              <img src="img/course3.png" alt="" class="hidden sm:block sm:w-44 sm:absolute sm:bottom-2 sm:left-2 sm:z-20 lg:w-48 lg:left-0 xl:w-64 xl:left-8 xl:bottom-0" />
             </div>
           </div>
         </div>
-        <div class="px-6 py-5 mt-16 w-full flex flex-col gap-3 overflow-hidden flex-wrap justify-center items-center sm:flex-row sm:justify-between sm:gap-2">
+        <div class="px-6 py-5 mt-16 w-full flex flex-col gap-3 overflow-hidden flex-wrap justify-center items-center max-[305px]:px-2 max-[305px]:py-2 sm:flex-row sm:justify-between sm:gap-2">
           <a href="#" class="group block w-56 py-5 text-center rounded-lg bg-white ring-1 ring-slate-900/5 hover:bg-primary hover:ring-primary">
-            <h3 class="text-slate-900 group-hover:text-white text-lg font-semibold mb-3">5000+</h3>
-            <p class="text-slate-500 group-hover:text-white text-sm">Total Course</p>
+            <h3 class="text-slate-900 group-hover:text-white text-lg font-semibold mb-3 max-[305px]:text-base">5000+</h3>
+            <p class="text-slate-500 group-hover:text-white text-sm max-[305px]:text-xs">Total Course</p>
           </a>
           <a href="#" class="group block w-56 py-5 text-center rounded-lg bg-white ring-1 ring-slate-900/5 hover:bg-primary hover:ring-primary">
-            <h3 class="text-slate-900 group-hover:text-white text-lg font-semibold mb-3">8000+</h3>
-            <p class="text-slate-500 group-hover:text-white text-sm">Success Stories</p>
+            <h3 class="text-slate-900 group-hover:text-white text-lg font-semibold mb-3 max-[305px]:text-base">8000+</h3>
+            <p class="text-slate-500 group-hover:text-white text-sm max-[305px]:text-xs">Success Stories</p>
           </a>
           <a href="#" class="group block w-56 py-5 text-center rounded-lg bg-white ring-1 ring-slate-900/5 hover:bg-primary hover:ring-primary">
-            <h3 class="text-slate-900 group-hover:text-white text-lg font-semibold mb-3">4+</h3>
-            <p class="text-slate-500 group-hover:text-white text-sm">Year Experience</p>
+            <h3 class="text-slate-900 group-hover:text-white text-lg font-semibold mb-3 max-[305px]:text-base">4+</h3>
+            <p class="text-slate-500 group-hover:text-white text-sm max-[305px]:text-xs">Year Experience</p>
           </a>
           <a href="#" class="group block w-56 py-5 text-center rounded-lg bg-white ring-1 ring-slate-900/5 hover:bg-primary hover:ring-primary">
-            <h3 class="text-slate-900 group-hover:text-white text-lg font-semibold mb-3">200+</h3>
-            <p class="text-slate-500 group-hover:text-white text-sm">Expert Mentor</p>
+            <h3 class="text-slate-900 group-hover:text-white text-lg font-semibold mb-3 max-[305px]:text-base">200+</h3>
+            <p class="text-slate-500 group-hover:text-white text-sm max-[305px]:text-xs">Expert Mentor</p>
           </a>
         </div>
       </div>
@@ -201,43 +222,51 @@
     <!-- Start Advantage -->
     <section id="advatage" class="pt-24 pb-44 lg:pt-36">
       <div class="container">
-        <div class="px-7 py-5">
-          <div class="text-center md:px-14 lg:px-56">
-            <h3 class="text-2xl font-semibold tracking-wide text-primary mb-8 sm:text-[1.9rem] sm:line sm:leading-8">Get an interesting advantage in learning</h3>
-            <p class="text-sm font-medium text-slate-500 sm:text-base">You will get several benefits if you register an account on our website. You can learn for free and the offers that we provide.</p>
+        <div class="px-7 py-5 lg:flex lg:gap-10 lg:items-center">
+          <div class="bg-white lg:flex lg:flex-col lg:gap-8">
+            <div class="text-center md:px-14 lg:text-start lg:px-0">
+              <h3 class="text-2xl font-semibold tracking-wide text-primary mb-8 sm:text-[1.9rem] sm:line sm:leading-8">Get an interesting advantage in learning</h3>
+              <p class="text-sm font-medium text-slate-500 sm:text-base">You will get several benefits if you register an account on our website. You can learn for free and the offers that we provide.</p>
+            </div>
+            <div class="mt-20 w-full flex flex-col gap-3 items-center lg:items-start lg:mt-0 lg:gap-1">
+              <div class="flex items-center gap-7 w-full py-4 px-2 sm:max-w-sm">
+                <div class="w-8 h-8 bg-green-500 flex items-center justify-center rounded-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </div>
+                <p class="text-base font-medium text-slate-700">Free Trial Class</p>
+              </div>
+              <div class="flex items-center gap-7 w-full py-4 px-2 sm:max-w-sm">
+                <div class="w-8 h-8 bg-green-500 flex items-center justify-center rounded-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </div>
+                <p class="text-base font-medium text-slate-700">Certificate Free</p>
+              </div>
+              <div class="flex items-center gap-7 w-full py-4 px-2 sm:max-w-sm">
+                <div class="w-8 h-8 bg-green-500 flex items-center justify-center rounded-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </div>
+                <p class="text-base font-medium text-slate-700">Interesting offer</p>
+              </div>
+              <div class="flex items-center gap-7 w-full py-4 px-2 sm:max-w-sm">
+                <div class="w-8 h-8 bg-green-500 flex items-center justify-center rounded-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </div>
+                <p class="text-base font-medium text-slate-700">Problem Solvin</p>
+              </div>
+            </div>
           </div>
-          <div class="mt-20 w-full flex justify-center items-center flex-col gap-3">
-            <div class="flex items-center gap-8 max-w-md py-4 px-2">
-              <div class="w-16 py-3 px-4 bg-green-500 flexitems-center rounded-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-white">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                </svg>
-              </div>
-              <p class="text-base font-medium text-slate-700">Free Trial Class</p>
-            </div>
-            <div class="flex items-center gap-8 max-w-md py-4 px-2">
-              <div class="w-16 py-3 px-4 bg-green-500 flexitems-center rounded-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-white">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                </svg>
-              </div>
-              <p class="text-base font-medium text-slate-700">Certificate Free</p>
-            </div>
-            <div class="flex items-center gap-8 max-w-md py-4 px-2">
-              <div class="w-16 py-3 px-4 bg-green-500 flexitems-center rounded-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-white">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                </svg>
-              </div>
-              <p class="text-base font-medium text-slate-700">Interesting offer</p>
-            </div>
-            <div class="flex items-center gap-8 max-w-md py-4 px-2">
-              <div class="w-16 py-3 px-4 bg-green-500 flexitems-center rounded-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-white">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                </svg>
-              </div>
-              <p class="text-base font-medium text-slate-700">Problem Solving</p>
+          <div class="hidden mt-72 w-full lg:mt-0 lg:block">
+            <div class="lg:relative lg:overflow-hidden lg:w-full lg:h-[23rem]">
+              <div class="lg:bg-primary lg:rounded-md lg:w-full lg:h-32 lg:absolute lg:bottom-0 xl:h-44"></div>
+              <img src="img/advantage.png" alt="" class="lg:w-80 lg:absolute lg:-bottom-10 lg:right-10 xl:w-96 xl:right-20" />
             </div>
           </div>
         </div>
